@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="3" name="Execution Suite" annotations="JDK" parallel="classes">
+         
+  <test name="Parallel Execution">
+	 <classes>
+	   <class name="tests.TC003_VerifyLeaveStatus"/>
+	   <class name="tests.TC002_EnterData"/>
+	 </classes>
+   </test>
+   
+  
+</suite>
