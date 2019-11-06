@@ -40,8 +40,9 @@ public class Hooks {
 		String url;
 		String projectPath = System.getProperty("user.dir");
 		properties = new Properties();
+
 		try {
-			properties.load(new FileInputStream(new File("./src/test/resources/config/dev.properties")));
+			properties.load(new FileInputStream(new File("./src/test/resources/config/stg1.properties")));
 		} 	catch (IOException e) {
 			e.printStackTrace();
 		}

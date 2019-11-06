@@ -13,13 +13,13 @@ public class HomePage {
 	private WebDriver driver;
 	
 	
-	@FindBy(name="is_username")
+	@FindBy(id="txtUserID")
 	private WebElement txtUsername;
 	
-	@FindBy(name="is_password")
+	@FindBy(id="txtPassword")
 	private WebElement txtPassword;
 	
-	@FindBy(xpath="//button[@class='btn btn-primary pull-right']")
+	@FindBy(id="sub")
 	private WebElement btnLogin;	
 	
 	@FindBy(xpath="//div[@class='ng-binding notification-error'][contains(text(),'Login error, please check your username and your password')]")
