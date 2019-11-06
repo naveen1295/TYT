@@ -29,13 +29,12 @@ public class Login {
 		
 	}
 
-	
-	@Given("I as a admin user navigate to Home page")
-	public void i_as_a_admin_user_navigate_to_Home_page() {	
-	
-		homePage.verifyTitle();
+
+	@Given("I as a admin user navigate to {string} Home page")
+	public void iAsAAdminUserNavigateToHomePage(String arg0) {
+
 	}
-	
+
 	@When("I try to login with username {string} and password {string}")
 	public void i_try_to_login_with_username_and_password(String username, String password) {
 		homePage.enterUsername(username);
@@ -61,5 +60,6 @@ public class Login {
 		dashboardPage.verifyTitle();
 	
 	}
-	
+
+
 }
